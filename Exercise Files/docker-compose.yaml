@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: mysql:8.0.36
+    container_name: Practical_Database_Design_SQL_Querying-mysql-1
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/apps/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=S3cret
+      - MYSQL_PASSWORD=An0thrS3crt
+      - MYSQL_USER=mysql_user
+      - MYSQL_DATABASE=mysql_db
